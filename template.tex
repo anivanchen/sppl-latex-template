@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+\usepackage{titlesec}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx}	
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage[toc,page]{appendix}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+
+\usepackage[
+backend=biber,
+style=ieee,
+sorting=ynt
+]{biblatex}
+\addbibresource{references.bib}
+
+\title{
+    \begin{flushleft}
+        \small{\textbf{STUYPULSE/TM-2024-000}} \\
+    \end{flushleft}
+    \vspace*{\stretch{2}}
+    \begin{flushleft}
+        \small \textbf{Technical Memorandum}
+        \vspace*{3mm}
+        \hrule width \hsize height 0.4mm
+        \vspace*{6mm}
+        \fontsize{24}{24}\selectfont
+        \textbf{This is a Placeholder Title For Now} \\
+        % \fontsize{16}{24}\selectfont
+        % Subtitle here
+    \end{flushleft}
+    \center{\vspace*{8mm}\hrule width \hsize height 0.4mm}
+}
+
+\author{
+    \vspace*{-2mm}
+    \begin{flushleft}
+        \Large First Last, First Last \\
+        % \small {DEPARTMENT, ORGANIZATION}
+    \end{flushleft}
+}
+
+\date{
+    \center{\vspace*{3mm}\hrule width \hsize height 0.4mm}
+    \vspace*{\stretch{1}}
+    \begin{flushleft}
+        \small\today
+    \end{flushleft}
+    \vspace*{\stretch{1}}
+    \begin{flushleft}
+        \includegraphics*[height=0.75in]{graphics/stuypulse-horizontal.png}
+    \end{flushleft}
+}
+
+\begin{document}
+\newgeometry{left=1.5in,right=1.5in,top=1in,bottom=1in}
+\maketitle
+\thispagestyle{empty}
+
+\break
+\restoregeometry
+
+\vspace*{\stretch{1}}
+
+\begin{abstract}
+    
+\noindent 
+This is a placeholder abstract. It should be a brief summary of the document. It should be no more than 300 words.
+
+\end{abstract}
+
+\vspace*{\stretch{1}}
+
+\break
+
+\tableofcontents
+\break
+
+\part{Introduction}
+
+\cite{einstein}
+
+\part{Big Part}
+
+\section{Section}
+
+\section{Section}
+
+\part{Big Part}
+
+\section{Section}
+
+\section{Section}
+
+\section{Conclusions}
+
+\begin{appendices}
+
+    \section{Definitions}
+
+    \section{Acronyms}
+
+\end{appendices}
+
+\break
+
+\printbibliography[title={References}]
+
+\end{document}
